@@ -1,0 +1,44 @@
+ <!--==========================
+    Top Bar
+  ============================-->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:hariharakumar88@example.com">hariharakumar88@example.com</a>
+        <i class="fa fa-phone"></i> +91 996 223 7400
+      </div>
+      <div class="social-links float-right">
+        <a href="https://www.linkedin.com/in/haritummala" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.quora.com/profile/Hari-Hara-Kumar-4" class="quora"><i class="fa fa-quora"></i></a>
+        <a href="https://github.com/h4hari" class="github"><i class="fa fa-github "></i></a>
+        <a href="https://www.facebook.com/harakumar.smile" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://plus.google.com/u/0/+HariHaraKumar88" class="google-plus"><i class="fa fa-google-plus"></i></a>
+        <a href="https://www.instagram.com/name_is_hari/" class="instagram"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a routerLink="/">{{name}}, <span>{{caption}}.</span></a></h1>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li routerLinkActive="menu-active" [routerLinkActiveOptions]="{exact : true}"><a routerLink="/">About</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/education">Education</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/experience">Experience</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/skills">Skills</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/achievements">Achievements</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/contact">Contact</a></li>
+          <li routerLinkActive="menu-active"><a routerLink="/gallery">Gallery</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+      <router-outlet></router-outlet>
+    </div>
+  </header>
